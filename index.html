@@ -1,18 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enfes Döner | Tokat</title>
+  <title>Enfes Döner: Lezzetin Bulunduğu Yer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body { font-family: 'Poppins', sans-serif; }
   </style>
 </head>
 <body class="bg-white text-gray-800">
 
+  <!-- SABİT WHATSAPP BUTONU -->
+  <a href="https://wa.me/905439470909" target="_blank"
+     class="fixed bottom-4 right-4 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg hover:bg-green-600 transition z-50 flex items-center space-x-2">
+    <i class="fab fa-whatsapp"></i>
+    <span>Sipariş Ver</span>
+  </a>
+
+  <!-- HEADER -->
   <header class="bg-red-600 text-white p-4 shadow-md">
     <div class="container mx-auto flex justify-between items-center">
       <h1 class="text-2xl font-bold">Enfes Döner</h1>
@@ -26,44 +34,50 @@
     </div>
   </header>
 
-  <section class="bg-gray-100 h-[400px] flex items-center justify-center text-center px-4">
-    <div class="bg-red-600 text-white p-6 rounded-xl shadow-lg">
-      <h2 class="text-4xl font-bold mb-2">Tokat’ın En Lezzetli Dönersini Deneyin!</h2>
-      <p class="text-lg">Hızlı servis, taptaze lezzetler.</p>
+  <!-- HERO -->
+  <section class="bg-[url('assets/images/hero.jpg')] bg-cover bg-center h-[400px] flex items-center justify-center text-white text-center px-4">
+    <div class="bg-black/60 backdrop-blur-sm p-6 rounded-xl shadow-lg">
+      <h2 class="text-4xl font-extrabold mb-2 text-yellow-300 drop-shadow">Tokat’ın En Lezzetli Dönersini Deneyin!</h2>
+      <p class="text-lg text-white">Hızlı servis, taptaze lezzetler.</p>
     </div>
   </section>
 
+  <!-- MENU -->
   <section id="menu" class="py-10 px-4 bg-gray-50">
     <h3 class="text-3xl font-bold text-center text-red-700 mb-8">Menümüz</h3>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-      <div class="bg-white p-5 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 text-center">
-        <h4 class="text-xl font-semibold text-red-600">Et Döner Dürüm</h4>
-        <p class="text-gray-500 text-sm">Lavaş içinde enfes et döner</p>
-        <p class="font-bold text-lg mt-2">90₺</p>
+      <div class="bg-white p-5 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center border-2 border-transparent hover:border-red-500">
+        <img src="assets/images/doner.jpg" alt="Et Döner" class="w-full h-40 object-cover rounded-lg mb-3" />
+        <h4 class="text-xl font-bold text-red-700">Tavuk Döner Dürüm</h4>
+        <p class="font-bold text-lg mt-2 text-green-600">70₺</p>
       </div>
-      <div class="bg-white p-5 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 text-center">
-        <h4 class="text-xl font-semibold text-red-600">Tavuk Döner Porsiyon</h4>
-        <p class="text-gray-500 text-sm">Yanında pilav ve turşu</p>
-        <p class="font-bold text-lg mt-2">75₺</p>
+
+      <div class="bg-white p-5 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center border-2 border-transparent hover:border-red-500">
+        <img src="assets/images/doner.jpg" alt="Et Döner" class="w-full h-40 object-cover rounded-lg mb-3" />
+        <h4 class="text-xl font-bold text-red-700">Tavuk Döner Dürüm (Porsiyon)</h4>
+        <p class="font-bold text-lg mt-2 text-green-600">150₺</p>
       </div>
-      <div class="bg-white p-5 rounded-2xl shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300 text-center">
-        <h4 class="text-xl font-semibold text-red-600">Ayran</h4>
-        <p class="text-gray-500 text-sm">Süzme yoğurttan</p>
-        <p class="font-bold text-lg mt-2">15₺</p>
+
+      <div class="bg-white p-5 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center border-2 border-transparent hover:border-red-500">
+        <img src="assets/images/doner.jpg" alt="Et Döner" class="w-full h-40 object-cover rounded-lg mb-3" />
+        <h4 class="text-xl font-bold text-red-700">Tavuk Ekmek Dürüm (Yarım Çeyrek)</h4>
+        <p class="font-bold text-lg mt-2 text-green-600">130₺</p>
       </div>
     </div>
   </section>
 
+  <!-- GALLERY -->
   <section id="gallery" class="py-10 px-4">
     <h3 class="text-3xl font-semibold text-center mb-8">Galeri</h3>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-      <div class="rounded-xl shadow bg-gray-200 h-32"></div>
-      <div class="rounded-xl shadow bg-gray-200 h-32"></div>
-      <div class="rounded-xl shadow bg-gray-200 h-32"></div>
-      <div class="rounded-xl shadow bg-gray-200 h-32"></div>
+      <img src="assets/images/food1.jpg" class="rounded-xl shadow-lg hover:scale-105 hover:brightness-110 transition-all duration-300 cursor-pointer" />
+      <img src="assets/images/food2.jpg" class="rounded-xl shadow-lg hover:scale-105 hover:brightness-110 transition-all duration-300 cursor-pointer" />
+      <img src="assets/images/shop.jpg" class="rounded-xl shadow-lg hover:scale-105 hover:brightness-110 transition-all duration-300 cursor-pointer" />
+      <img src="assets/images/food3.jpg" class="rounded-xl shadow-lg hover:scale-105 hover:brightness-110 transition-all duration-300 cursor-pointer" />
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact" class="py-10 px-4 bg-gray-50">
     <h3 class="text-3xl font-semibold text-center mb-6">İletişim</h3>
     <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -71,14 +85,25 @@
         <input type="text" name="isim" placeholder="Adınız" required class="w-full border p-2 rounded" />
         <input type="email" name="email" placeholder="E-posta" required class="w-full border p-2 rounded" />
         <textarea name="mesaj" rows="4" placeholder="Mesajınız" required class="w-full border p-2 rounded"></textarea>
-        <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition duration-300 shadow-md hover:shadow-lg">Gönder</button>
+        <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 transition duration-300 shadow-md hover:shadow-xl active:scale-95">
+          Gönder
+        </button>
       </form>
-      <div class="rounded-xl shadow w-full h-full min-h-[300px] bg-gray-200 flex items-center justify-center text-gray-500">Google Maps</div>
+      <div class="rounded-xl shadow w-full h-full min-h-[300px]">
+        <iframe class="w-full h-full rounded-xl"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.1234567890!2d36.561111!3d40.313333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1234567890abcdef%3A0xabcdef1234567890!2sEnfes%20D%C3%B6ner!5e0!3m2!1str!2str!4v1710000000000"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </section>
 
-  <footer class="bg-red-600 text-white text-center py-4 mt-10">
-    <p>© 2025 Enfes Döner | Tokat</p>
+  <!-- FOOTER -->
+  <footer class="bg-red-700 text-white text-center py-4 mt-10 space-y-2">
+    <p>© 2025 Enfes Döner - Tokat</p>
+    <div class="flex justify-center gap-6 text-sm">
+      <a href="https://www.instagram.com/enfesdoner" target="_blank" class="hover:text-yellow-300 transition">Instagram</a>
+      <a href="https://wa.me/905439470909" target="_blank" class="hover:text-yellow-300 transition">WhatsApp</a>
+    </div>
   </footer>
 
 </body>
